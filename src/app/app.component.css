@@ -1,0 +1,11 @@
+.pt-80 {
+    padding-top: 80px;
+}
+.col {
+    padding-right: 0;
+    padding-left: 0;
+
+}
+#body-row {
+    /* display: table; */
+}

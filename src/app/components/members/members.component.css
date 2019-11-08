@@ -1,0 +1,113 @@
+.members-content {
+    width: 100%;
+    /* display: flex; */
+    padding: 0;
+    margin: 0;
+    background-color: #674172;
+
+}
+.members-header {
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+    margin-left: 70px;
+    color: #fff;
+    display: block;
+    
+}
+.members-div {
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+
+.row-eq-height {
+    display: flex;
+}
+.col-pad {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.row-odd {
+    display: flex;
+}
+.row-even {
+    display: flex;
+}
+.r-o-c {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.r-o-c1 {
+    background-color: #F4C20D;
+}
+.r-o-c2 {
+    background-color: #02CEC2;
+}
+.r-o-c3 {
+    background-color: #E1337B;
+}
+.r-e-c {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    color: #fff;
+}
+.r-e-c1 .r-e-m-name {
+    color: #F4C20D;
+}
+.r-e-c2 .r-e-m-name {
+    color: #02CEC2;
+}
+.member-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+.r-o-m-name {
+    font-size: 28px;
+    font-weight: 400;
+}
+.r-o-m-grade {
+    font-size: 20px;
+}
+.r-o-m-marks {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.r-o-m-school {
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+}
+.r-o-m-school p {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0;
+}
+.r-e-m-school {
+    background-color: #f0f0f0;
+    padding: 10px;
+    width: 100%;
+}
+.r-e-m-school p {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 0;
+}
+.r-e-m-name {
+    font-size: 28px;
+    font-weight: 400;
+}
+.r-e-m-grade {
+    font-size: 20px;
+    color: #333;
+}
+.r-e-m-marks {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #333;
+}

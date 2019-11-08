@@ -1,0 +1,13 @@
+.nav-content {
+    
+}
+.topnav-prop {
+    background-color: #FFE400;
+    /* position: fixed; */
+    display: flex;
+    /* border-bottom: 1px solid #333; */
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.3);
+}
+.pull-right {
+    float: right;
+}

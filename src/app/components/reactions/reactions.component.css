@@ -1,0 +1,83 @@
+.reactions-content {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.reactions-header {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    color: #9430cd;
+    display: block;
+}
+.rea-div {
+    margin: 0 100px;
+    margin-top: 50px;
+}
+
+.rea-box{
+    box-shadow: 0px 4px 12px 0px rgba(0,0,0,0.3);
+    margin-bottom: 20px;
+}
+.rea-box ul li {
+    list-style: none;
+    padding: 20px 0;
+    
+}
+.reaction {
+    padding: 25px;
+    font-size: 25px;
+}
+.rea-col1 .rea-box .reaction {
+    color: #ffcc33;
+}
+.rea-col2 .rea-box .reaction {
+    color: #d40e52;
+}
+.rea-col3 .rea-box .reaction {
+    color: #1f89af;
+}
+
+.rea-arr {
+    background: url(../../../assets/images/arr-w.png) center center no-repeat;
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+    /* float: left; */
+}
+
+.rea-col1 .rea-box .rea-user-info .rea-arr {
+    background-color: #ffcc33;
+}
+.rea-col2 .rea-box .rea-user-info .rea-arr {
+    background-color: #d40e52;
+}
+.rea-col3 .rea-box .rea-user-info .rea-arr {
+    background-color: #1f89af;
+}
+
+.hr-m0 {
+    margin: 0;
+}
+.rea-user-info {
+    padding: 20px;
+    display: flex;
+}
+.rea-users {
+    padding-left: 10px;
+}
+.rea-users h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.rea-users p {
+    text-transform: uppercase ;
+    margin-bottom: 5px;
+}
+.rea-users .addr {
+    color: #999;
+}

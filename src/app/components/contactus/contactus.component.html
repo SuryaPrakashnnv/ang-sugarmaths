@@ -1,0 +1,119 @@
+<div class="contact-content">
+    <div class="row m-5">
+        <div class="col-md-8 col-sm-12">
+            <div class="c-form">
+                <h4 class="c-f-title">
+                    <span class="pencil-icon"></span>
+                    Fill the following form to get in touch with us.
+                </h4>
+                <hr>
+                
+                <div class="c-f-note">
+                    Note: all required fields have a star*.
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Contact Details
+                    </div>
+                    <div class="card-body">
+                        <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                            <div class="form-group">
+                                <label for="name">*Name</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control"
+                                    name="name"
+                                    #userName="ngModel"
+                                    [ngClass]="{'is-invalid': userName.errors && userName.touched}"
+                                    [(ngModel)]="user.name"
+                                    minlength="3"
+                                    required
+                                >
+                                <div [hidden]="!userName.errors?.required" class="invalid-feedback">
+                                    Name required
+                                </div>
+                                <div [hidden]="!userName.errors?.minlength" class="invalid-feedback">
+                                    Must be at least 3 characters
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">*Email</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control"
+                                    name="email"
+                                    #userEmail="ngModel"
+                                    [ngClass]="{'is-invalid': userEmail.errors && userEmail.touched}"
+                                    [(ngModel)]="user.email"
+                                    pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$"
+                                    required
+                                >
+                                <div [hidden]="!userEmail.errors?.required" class="invalid-feedback">
+                                    Email required
+                                </div>
+                                <div [hidden]="!userEmail.errors?.pattern" class="invalid-feedback">
+                                    Email is not valid
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">*Phone</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control"
+                                    name="phone"
+                                    #userPhone="ngModel"
+                                    [ngClass]="{'is-invalid': userPhone.errors && userPhone.touched}"
+                                    [(ngModel)]="user.phone"
+                                    minlength="10"
+                                    required
+                                >
+                                <div [hidden]="!userPhone.errors?.required" class="invalid-feedback">
+                                    Phone Number required
+                                </div>
+                                <div [hidden]="!userPhone.errors?.minlength" class="invalid-feedback">
+                                    Must be at least 10 characters
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="query">*Query</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control"
+                                    name="query"
+                                    #userQuery="ngModel"
+                                    [ngClass]="{'is-invalid': userQuery.errors && userQuery.touched}"
+                                    [(ngModel)]="user.query"
+                                    minlength="3"
+                                    required
+                                >
+                                <div [hidden]="!userQuery.errors?.required" class="invalid-feedback">
+                                    Query required
+                                </div>
+                                <div [hidden]="!userQuery.errors?.minlength" class="invalid-feedback">
+                                    Must be at least 3 characters
+                                </div>
+                            </div>
+                            <flash-messages></flash-messages>
+                            <input type="submit" value="Submit" class="btn btn-primary btn-block">
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12">
+            <div class="c-addr">
+                <h4>Contact Us</h4>
+                <p>Sugarmaths.in<br>
+                Haseen Plaza,<br>
+                Begumpet,<br>
+                Hyderabad - 500016<br>
+                Mobile No. 9949458091</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
