@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-// import { $ } from 'protractor';
-// import * as $ from 'jquery';
+//  import { $ } from 'protractor';
+//  import * as $ from 'jquery';
 
 
 @Component({
